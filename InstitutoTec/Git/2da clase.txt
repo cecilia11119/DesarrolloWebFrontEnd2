@@ -1,0 +1,65 @@
+se creo una nueva carpeta 
+clic derecho se hizo git bash en esa carpeta
+git init
+para iniciar el sistema
+un repositorio se acaba de registrar desde cero
+creo un archivo de prueba
+creo un readme .txt
+le puso este texto
+# FRONT END 2
+## Descripcion
+Este es mi repositorio para codigo front end 
+
+le cambio la extension por md
+si no permite cambiar es porque se tenia abierto el git bash here
+
+primero puso git add .
+luego creo el primer commit
+git commit -m "Creando el repositorio y subiendo el archivo README.md"
+agrego un got status para ver como esta el repositorio
+luego git log
+muestra el primer commit
+luego lo subio a la nube
+
+abrir la cuenta git hub
+se logeo
+creo un nuevo repositorio
+tambien se puede crear con el signo mas a la derecha
+
+se copia el codigo que sale en la primera pantallas el codigo debajo de empujar
+... o empujar un repositorio existente desde la línea de comando
+git remote add origin https://github.com/cecilia11119/DesarrolloWebFrontEnd2.git
+git push -u origin master
+copio los archivos a la nuberegresar github y actualizar la pagina
+
+como borrar un repositorio 
+entrar al repositorio
+en settings o configuraciones
+ir hasta abajo a donde dice zona peligrosa
+la ultima opcion es eliminar repositorio
+para eliminarlo se tiene que escribir el nombre exacto de reposicitorio que se quiere borrar
+
+se creo otra carpeta para hacer un clon del repositorio del profesor
+alli se abre el git bash here
+esa carpeta es nueva y no tiene ninguna configuracion
+git clone 
+buscar el perfil del que quiero clonar
+buscar el repositorio que quiero clonar
+entrar en el repositorio
+dar clic en el boton verde que esta a aladerecha si en la parte baja dice
+clone with https tiene que estar en http
+se copia el link
+git clone y el link
+despues se hace un git pull en esa carpeta para descargar todos los cambios efectuados en el repo remoto
+tengo la copia de solo lectura un espejo
+no tocar el archivo porque git se puede confundir y no reconocer el repositorio original
+si por casualidad se escapa una edicion correjir poniendo control + Z
+
+para actualizar se debe entrar a la carpeta codigo virtual 3
+y alli poner git pull
+
+cd mas tab y el bash sugiere la carpetas que existen
+
+para Git una carpeta vacia no lo toma en cuenta ni lo copia no lo sube
+solo sube si la carpte contiene un archivo llamado .gitkeep sin otra extension
+

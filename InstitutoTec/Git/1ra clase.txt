@@ -1,0 +1,162 @@
+para saber si se tiene instalado 
+entrar a cmd 
+escribir git --version
+
+es un sistema de versionamiento de codigo
+
+terminos commit Registrar un punto en el tiempo para los archivos del proyecto
+pull verificar y descargar los cambios de un repositorio
+clone clonar un repositorio externo
+remote repositorio remoto
+init para inicializar el sistema de versionamiento
+
+crear una carpeta para archivos
+clic derecho dentro de la carpeta
+dar cli a git bash here
+
+git init para inicializar el sistema de versionamiento en la carpeta 
+en la que nos encontramos
+dice q se inicializo un repositorio vacio
+se creo una carpeta .git oculta alli se va a grabar toda la inoformacion
+para ver esa carpeta se debe tener activado la opcion de ver archivos ocultos 
+en menu vista 
+opciones
+pestaña ver
+seleccionar mostrar archivos ocultos
+
+git status para consultar el estado de mi repositorio
+se ve el archivo rojo quiere decir que no esta crakeado 
+para pasar el archivo que cree al stage 
+git add codigo.txt 
+para que este controlado en la memoria de git
+
+para ver el status de mi repositorio poner nuevamente 
+git status
+ya debe estar el mismo mensaje pero en verde
+
+git add .
+es para mandar al stage a todos los archivos sin excepcion si preguntar cual
+
+una vez que los archivos esten en el stage ya se puede grabar un punto en el tiempo 
+git commit -m "agregando mis archivos iniciales" ese seria el comentario 
+sale error please tell me who you are
+nos tenemos que identificar
+git config -l
+sirve para mostra la configuracion de las variables globales de git
+poner enter hasta que aparezca el mensaje end
+luego presionar la letra q para salir
+
+para configura el usuario
+git config --global user.name "Cecilia Cardenas"
+presionar la flecha para arriba del teclado para que copie el ultimo comando creado
+para configurar el email 
+git config --global user.email "cecilia11119Agmail.com"
+
+para ver si se a configurardo correctamente el git
+git config -l
+ahora si sale mi nombre y correo configurado
+ahora si se puede hacer commit con mensaje grabar 
+git commit -m "agregue mis archivos inciales"
+
+se puede modificar el ultimo comentario
+git commit -amend
+
+ahora sale un mensaje corto de 3 lineas que dice ntihing commit 
+working tree clean
+quiere decir que ya no hay ningun archivo para agregar o grabar todo esta bien 
+ahora para el ejemplo modificar nuevamente el archivo que esta en la carpeta codigo 
+ahora debemos ver como esta el repositorio
+git status 
+sale un mensaje de modificado nuevamente el nombre del archivo esta en rojo
+y el mensaje dice que el archivo no esta en el stage
+nuevamente git add .
+para agregarlo al stage
+ahora sale el mismo mensaje pero con letras verdes
+ahora si podemos darle commit con el mensaje que mas me ayude a recordar los cambios que implemente
+despues de dar enter sale un mensaje que incluye hasta la cantidad de lineas que se han agregado
+git status y sale el mensaje nada en el commit working tree clean 
+todo esta bien
+
+git log 
+para ver el historial de commits del repo
+el ultimo commit es el primero
+lista la hora la fecha quien lo hizo y los comentarios
+para desacer algo que ya no queremos en el git
+para probar agrego mas lineas en el archivo
+luego le dio git add .
+luego hizo otro commit
+git commit -m " agregue un comentario mas para borrar"
+git log
+para listar
+dice HEAD MASTER estamos en la cabeza de los commits el ultimo
+
+cada commit tiene un identificador unico un numero grande
+copiar ese nro
+
+git reset y el nro del commit al que queremos volver --hard
+git reset e060a6cf12d203ce3e3df022a47cd34e41243de2 --hard
+cuando se hace un cambio los cambios son irreversibles
+casi nunca se hace para no perder por error codigo
+lo que se suele hacer es hacer otro commit corrijiendo el error
+
+todos los commits estan el local y eso es peligroso porque si se malogra
+la maquina todo mi proyecto queda en la maquina 
+
+para el ejemplo se creo un nuevo repositorio
+en new
+colocar un nombre
+se puede escribir una descrpcion
+puede ser publico o privado
+en licencia mit license es signifiado de codigo abierto
+para el ejemplo lo creo sin licencia todo limpio vacio
+crear repositorio
+
+supongamos que tengo un archivo con mis contraseñas que no queremos que este en la nube
+se crea otro archivo llamado .gitignore sin extension txt
+sale un mensaje que te pregunta si estas adeacuerdo porq podria quedar inutilizable aceptar
+sirve para obviar archivos o carpetas enteras al momento de subir los archivos a la nube
+dentro de esa carpeta se deben escribir los nombres de los archivos que queremos que ignore
+como por ejemplo el archivo password
+se abre el gitignore con el block de nota y alli se pone los nombres de los archivos q no queremos q suban a la nube
+creo un archivo de texto README.txt
+puso esto
+# Mi primer repositorio
+## Archivos existentes
+- codigo.txt
+
+a Readme.txt le cambio la extension por .md
+viene de markdown formato de texto plano
+
+esto es independiente de haber creado el repositorio
+como se hizo varios cambios 
+agregar git add .
+git commit -m "Agregando .gitignore y el README.md"
+git status
+
+buscar la pagina de codigos que se creo al monto de crear el repositorio este texto 
+debajo de empujar el primer comando despues de ... o empujar un repositorio existente desde la línea de comando
+git remote add origin https://github.com/cecilia11119/codigo_prueba.git
+
+este comando copiarlo en el git bash
+este comando lo que hace es que nuestro repositorio local va a estar linkeado por un servidor remoto 
+estoy agregando un servidor remoto llamdo origin
+
+ya he agregado el servidor remoto
+
+para subir los archivos copiar el segundo comando debajo del push en el git bash
+git push -u origin master
+
+puede ser que aparezca la ventana para logearse
+te logeas
+
+en la pagina de github aparece un comentario de todo lo que hay en el repositorio
+Mi primer repositorio
+Archivos existentes
+codigo.txt
+
+# muestra como un titulo
+## muestra como un subtitulo
+y - muestran una lista
+
+esta es escritura mark down es impoprtante porq me da una lista de todo el repositorio
+tambien a subido la cantidad de commits desde el tiempo de su creacion

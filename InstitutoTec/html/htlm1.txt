@@ -1,0 +1,99 @@
+HTML
+
+creo una carpeta dia2 y haciendo click derecho le dio a new fail
+con el nombre 01-holamundo.html
+en el espacio de trabajo se coloca el signo de admiracion ! y escojer la 1ra recomendacion
+
+hay 2 tipos de etiquetas
+las que tienen cierre y las que no
+
+Las etiquetas con cierre
+tienen una apertura y un cierre
+las etiquetas tambien tienen atributos
+
+
+las etiquetas sin cierre tambien pueden tener atributos
+y deben terminar en /> asi se fuerza el cierre
+<br/> este puede tener atributos
+<hr/>
+<meta/>
+
+<div>
+<section>
+<a> link <a/>
+</section>
+
+</div>
+
+esta jerarquia pertenece al dom
+
+la zona del head seria la zona de configuracion la zona invisible
+la zona del body seria la zona visible o la vista
+
+charset utf 8 todos los textos que vayamos a colocar dentro de la zona del body
+van a estar configurados la combinacion de caracteres que se usan en la pagina
+al estandar por ejemplo soporta la Ñ
+
+Para agregar extensiones de la barra de code
+file 
+preferations
+extensions
+
+buscar para cambiar la presentacion de los colores de fondo
+Easyzoom se puede agrandar el texto de la pagina html
+instalar
+
+live server
+material icon Theme
+monokai night theme
+open in browser
+prettier code formatter
+synthwave 84
+terminal
+vscode
+auto rename tag
+
+reintendar es tabular las etiquetas
+para que se vea mas ordenado
+alt + shift + f
+se va a reindentar
+para eso se instalo prettier 
+
+ctrl + S guardar mas facil
+
+partes del codigo html
+header
+nav para inicion nosotros contacto
+en el cuerpo main
+el section es para noticias
+el aside en para un menu lateral para navegar
+footer &copy todos los derechos reservados 2020
+
+El css mejora el codigo html
+el javascript mejora el css
+
+hot reloading es como recarga en vivo
+es la ventaja de usar hot reloading para no estar actualizando
+
+esta pagina analiza la semantica web
+https://gsnedders.html5.org/outliner/
+si se presiona el boton OUTLINE THIS
+ayuda a saber si esta pagina tiene buena semantica web 
+
+para seleccionar y copiar tod ctrl + a
+
+para comenzar una pagina se coloca el signo ! 
+luego se elije la primera opcion que sale
+
+siempre debe haber una etiqueta h1
+los demas h si se pueden repetir
+
+para que aparezcamos se deben poner titulos pero no poner muchos titulos
+porq google nos puede banear si se usan muchas cosas ocultas
+
+
+
+
+
+
+
